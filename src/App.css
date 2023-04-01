@@ -2,12 +2,14 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
+/* navbar */
 .navbar {
   padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: rgba(127, 127, 127, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .nav-content1 {
@@ -15,8 +17,12 @@ body {
   margin-top: 15px;
   margin-left: 50px;
   text-align: start;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
+}
+
+.nav-content1 :hover {
+  color: rgba(89, 89, 89, 1);
 }
 
 .nav-content2 {
@@ -24,6 +30,7 @@ body {
   margin-top: 15px;
   margin-right: 50px;
   text-align: end;
+  font-size: 1.1rem;
 
 }
 
@@ -31,14 +38,20 @@ body {
   display: flex;
   flex-direction: row-reverse;
   list-style-type: none;
-
 }
 
 .item {
   color: rgba(127, 127, 127, 1);
   margin: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
+
+.item :hover {
+  color: rgba(89, 89, 89, 1);
+}
+
+/*home*/
 
 .intro {
   height: 200px;
@@ -46,12 +59,13 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .intro-text {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
   display: inline;
   color: rgba(89, 89, 89, 1);
 }
@@ -66,6 +80,8 @@ body {
   margin: 50px;
 }
 
+/*about me*/
+
 .content {
   background-color: rgba(241, 234, 214, 1);
   height: 350px;
@@ -73,6 +89,7 @@ body {
   flex-direction: row;
   font-size: 1.3rem;
   color: rgba(89, 89, 89, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -96,4 +113,100 @@ body {
 .content-head {
   text-align: center;
   margin-top: 20px;
+}
+
+/*contact*/
+
+.contact {
+  background-color: rgba(247, 184, 1, 1);
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.contact-items:hover {
+  font-weight: bold;
+  filter: drop-shadow(0.5px 0px 0.5px black);
+}
+
+.contact-imgs {
+  width: 50px;
+  margin: 60px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+
+@media screen and (max-width:1400px) {
+  .img {
+    height: 330px;
+  }
+}
+
+/*tablet view*/
+
+@media screen and (max-width: 1225px) {
+  .nav-content1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-content2 {
+    font-size: 0.9rem;
+  }
+
+  .intro-text {
+    margin-left: 250px;
+    margin-right: 250px;
+
+    font-size: 2rem;
+  }
+
+  .img {
+    height: 300px;
+    margin: 50px;
+  }
+
+  .content {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    font-size: 1.7rem;
+  }
+
+  .contact-items {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+
+  .intro-text {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 1.8rem;
+
+  }
+
+  .img {
+    height: 250px;
+  }
 }

@@ -7,12 +7,12 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavBar onClick={this.props.onClick} />
+                <NavBar onClick={this.props.scroll} />
 
                 <div className='intro'>
                     <p className='intro-text'>Hi there! I’m an electrical engineer based in Shiraz, Iran who works as a web developer.</p>
                 </div>
-                <div ref={this.testRef} className='img-contain'>
+                <div className='img-contain'>
                     <img src={image} className='img' />
                 </div>
 

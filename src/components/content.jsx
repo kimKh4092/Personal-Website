@@ -8,7 +8,6 @@ class Content extends Component {
         return (
 
             <div className='content'>
-
                 <ul className='list'>
                     <li className='content-item'>I am an electrical engineer, graduated
                         from shiraz university.</li>
