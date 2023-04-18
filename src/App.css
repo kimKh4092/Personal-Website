@@ -1,5 +1,8 @@
 body {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(242, 242, 242);
+
+
+
 }
 
 /* navbar */
@@ -72,16 +75,35 @@ body {
 
 .img-contain {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.designs {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .img {
-  height: 350px;
-  margin: 50px;
+  height: 100px;
+  margin: 20px;
+}
+
+.meh {
+  height: 400px;
+  border-radius: 10px;
+
 }
 
 /*about me*/
-
 .content {
   background-color: rgba(241, 234, 214, 1);
   height: 350px;
@@ -120,7 +142,7 @@ body {
 .contact {
   background-color: rgba(247, 184, 1, 1);
   height: 300px;
-  margin-top: 100px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -155,11 +177,6 @@ body {
 }
 
 
-@media screen and (max-width:1400px) {
-  .img {
-    height: 330px;
-  }
-}
 
 /*tablet view*/
 
@@ -175,13 +192,7 @@ body {
   .intro-text {
     margin-left: 250px;
     margin-right: 250px;
-
     font-size: 2rem;
-  }
-
-  .img {
-    height: 300px;
-    margin: 50px;
   }
 
   .content {
@@ -190,13 +201,33 @@ body {
 
   .contact {
     font-size: 1.7rem;
+    height: 250px;
+    margin-top: 50px;
   }
 
   .contact-items {
     font-size: 0.9rem;
   }
+
+  .contact-imgs {
+    width: 40px;
+  }
+
+  .meh {
+    height: 300px;
+  }
+
+  .designs {
+    height: 400px;
+    width: 300px;
+  }
+
+  .img {
+    height: 70px;
+  }
 }
 
+/* tablet view */
 @media screen and (max-width: 870px) {
 
   .intro-text {
@@ -206,7 +237,65 @@ body {
 
   }
 
-  .img {
-    height: 250px;
+  .content {
+    font-size: 1rem;
+    height: 320px;
   }
+
+  .contact {
+    font-size: 1.5rem;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .contact-items {
+    font-size: 0.9rem;
+  }
+
+  .contact-imgs {
+    width: 35px;
+
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+
+  .meh {
+    height: 300px;
+  }
+
+  .designs {
+    height: 300px;
+    width: 250px;
+  }
+
+  .img {
+    height: 50px;
+  }
+
+}
+
+/* mobile view */
+@media screen and (max-width: 750px) {
+  .nav-content2 {
+    display: none;
+  }
+
+  .nav-content1 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .intro-text {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 1.2rem;
+
+  }
+
+
 }

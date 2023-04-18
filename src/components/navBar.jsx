@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+
+
+
 class NavBar extends Component {
 
     render() {
         return (
             <nav className='navbar'>
+
                 <div className='nav-content1'>
                     <a onClick={() => this.props.onClick('home')} className='item'>Kimia Khalili</a>
                 </div>
@@ -19,6 +23,7 @@ class NavBar extends Component {
                         <li className='item'>
                             <a className='item' onClick={() => this.props.onClick('home')}>Home</a>
                         </li>
+                        <li></li>
                     </ul>
 
                 </div>
