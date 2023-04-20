@@ -12,7 +12,13 @@ function Main() {
     const content = useRef(null);
     const contact = useRef(null);
 
-    const scrollToSection = (elementRef) => {
+    const scrollToSection = (elementRef, selected) => {
+        if (selected === 'home') {
+            window.location.reload();
+        }
+
+
+
         window.scrollTo({
             top: elementRef.current.offsetTop,
             behavior: 'smooth'
@@ -23,13 +29,13 @@ function Main() {
         setSection(selected);
 
         if (selected === 'home') {
-            scrollToSection(home);
+            scrollToSection(home, selected);
         }
         if (selected === 'about me') {
-            scrollToSection(content)
+            scrollToSection(content, selected)
         }
         if (selected === 'contact') {
-            scrollToSection(contact)
+            scrollToSection(contact, selected)
         }
     }
 

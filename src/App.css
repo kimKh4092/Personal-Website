@@ -1,11 +1,11 @@
 body {
   background-color: rgb(242, 242, 242);
-
 }
 
 .active {
   color: rgba(247, 184, 1, 1);
 }
+
 
 /* navbar */
 .navbar {
@@ -36,7 +36,16 @@ body {
   margin-right: 50px;
   text-align: end;
   font-size: 1.1rem;
+}
 
+@keyframes nav {
+  from {
+    color: rgba(247, 184, 1, 1);
+  }
+
+  to {
+    color: rgba(127, 127, 127, 1);
+  }
 }
 
 .nav-content3 {
@@ -59,6 +68,8 @@ body {
 
 .item {
   color: rgba(127, 127, 127, 1);
+  animation-name: nav;
+  animation-duration: 4s;
   margin: 5px;
   text-decoration: none;
   cursor: pointer;
@@ -69,7 +80,6 @@ body {
 }
 
 /*home*/
-
 .intro {
   height: 200px;
   background-color: rgba(247, 184, 1, 1);
@@ -85,6 +95,18 @@ body {
   margin-right: 300px;
   display: inline;
   color: rgba(89, 89, 89, 1);
+  animation-name: intro;
+  animation-duration: 3s;
+}
+
+@keyframes intro {
+  from {
+    margin-left: -1000px;
+  }
+
+  to {
+    margin-left: 200px;
+  }
 }
 
 .img-contain {
@@ -113,7 +135,19 @@ body {
 .meh {
   height: 400px;
   border-radius: 10px;
+  animation-name: pic;
+  animation-duration: 4s;
+}
 
+/* animations */
+@keyframes pic {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 400;
+  }
 }
 
 /*about me*/
@@ -125,7 +159,6 @@ body {
   font-size: 1.3rem;
   color: rgba(89, 89, 89, 1);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 .list {
@@ -137,7 +170,6 @@ body {
   flex-direction: row;
   width: 50vw;
   justify-content: center;
-
 }
 
 .content-item {
@@ -151,7 +183,6 @@ body {
 }
 
 /*contact*/
-
 .contact {
   background-color: rgba(247, 184, 1, 1);
   height: 300px;
@@ -167,14 +198,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .contact-items {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 1.1rem;
   cursor: pointer;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.contact-links {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+
 }
 
 .contact-items:hover {
@@ -189,10 +229,7 @@ body {
   margin-bottom: 0px;
 }
 
-
-
 /*tablet view*/
-
 @media screen and (max-width: 1225px) {
   .nav-content1 {
     font-size: 1.2rem;
@@ -220,6 +257,8 @@ body {
 
   .contact-items {
     font-size: 0.9rem;
+    margin: 10px;
+
   }
 
   .contact-imgs {
@@ -247,7 +286,6 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     font-size: 1.8rem;
-
   }
 
   .content {
@@ -263,16 +301,15 @@ body {
 
   .contact-items {
     font-size: 0.9rem;
+    margin: 5px;
   }
 
   .contact-imgs {
     width: 35px;
-
     margin: 50px;
     margin-top: 10px;
     margin-bottom: 0;
   }
-
 
   .meh {
     height: 300px;
@@ -286,12 +323,10 @@ body {
   .img {
     height: 50px;
   }
-
 }
 
 /* mobile view */
 @media screen and (max-width: 750px) {
-
   .navbar {
     padding: 5px;
   }
@@ -302,13 +337,11 @@ body {
 
   .nav-content1 {
     font-size: 1rem;
-    margin: 0;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
-
-
 
   .intro {
     height: 150px;
@@ -318,7 +351,6 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     font-size: 1.2rem;
-
   }
 
   .img-contain {
@@ -358,11 +390,9 @@ body {
     margin-top: 10px;
   }
 
-
   .lists {
     justify-content: flex-start;
   }
-
 
   .contact {
     font-size: 1.3rem;
@@ -382,12 +412,11 @@ body {
     margin-bottom: 0;
   }
 
-
   /* dropdownMenu */
-
   .nav-content3 {
     display: block;
     width: 50vw;
+    margin: 10px;
   }
 
   .nav-content3 :hover {
@@ -399,9 +428,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 0px;
     margin-right: 10px;
-
   }
 
   .dropdown-content1 {
@@ -415,6 +443,21 @@ body {
     position: relative;
     background-color: rgba(241, 234, 214, 1);
     box-shadow: 8px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    animation-name: dbt1;
+    animation-duration: 1s;
+
+  }
+
+  @keyframes dbt1 {
+    from {
+      height: 0;
+
+    }
+
+    to {
+      height: 150px;
+
+    }
   }
 
   .dbt-item {
@@ -422,7 +465,17 @@ body {
     padding: 15px 15px;
     text-decoration: none;
     cursor: pointer;
-    display: block;
+    animation-name: dbt2;
+    animation-duration: 6s;
+
+  }
+
+  @keyframes dbt2 {
+    from {
+      color: rgb(242, 242, 242);
+    }
+
+    to {}
   }
 
   .dbt-item:hover {
@@ -432,18 +485,28 @@ body {
   .active {
     color: rgba(247, 184, 1, 1);
   }
-
-
-
 }
-
 
 /* mobile view */
 @media screen and (max-width: 500px) {
   .intro-text {
     margin-left: 70px;
     margin-right: 70px;
-
+    animation-name: intro1;
+    animation-duration: 3s;
   }
 
+  @keyframes intro1 {
+    from {
+      margin-left: -100px;
+    }
+
+    to {
+      margin-left: 70px;
+    }
+  }
+
+  .contact-items {
+    margin: 2px;
+  }
 }
