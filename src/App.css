@@ -1,8 +1,10 @@
 body {
   background-color: rgb(242, 242, 242);
 
+}
 
-
+.active {
+  color: rgba(247, 184, 1, 1);
 }
 
 /* navbar */
@@ -37,6 +39,18 @@ body {
 
 }
 
+.nav-content3 {
+  display: none;
+}
+
+.dropdown-content2 {
+  display: none;
+}
+
+.dropdown-content1 {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row-reverse;
@@ -51,7 +65,7 @@ body {
 }
 
 .item :hover {
-  color: rgba(89, 89, 89, 1);
+  color: rgba(247, 184, 1, 1);
 }
 
 /*home*/
@@ -89,7 +103,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .img {
@@ -278,16 +291,27 @@ body {
 
 /* mobile view */
 @media screen and (max-width: 750px) {
+
+  .navbar {
+    padding: 5px;
+  }
+
   .nav-content2 {
     display: none;
   }
 
   .nav-content1 {
     font-size: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
-  .navbar {
-    justify-content: flex-start;
+
+
+  .intro {
+    height: 150px;
   }
 
   .intro-text {
@@ -297,5 +321,129 @@ body {
 
   }
 
+  .img-contain {
+    flex-direction: column;
+  }
+
+  .meh {
+    height: 250px;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  .designs {
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    height: 600px;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .list {
+    background-color: rgba(241, 234, 214, 1);
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  .list2 {
+    background-color: rgba(241, 234, 214, 1);
+    width: auto;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+
+  .lists {
+    justify-content: flex-start;
+  }
+
+
+  .contact {
+    font-size: 1.3rem;
+    height: 250px;
+    margin-top: 50px;
+    height: 180px;
+  }
+
+  .contact-items {
+    font-size: 0.6rem;
+  }
+
+  .contact-imgs {
+    width: 20px;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+
+  /* dropdownMenu */
+
+  .nav-content3 {
+    display: block;
+    width: 50vw;
+  }
+
+  .nav-content3 :hover {
+    cursor: pointer;
+    color: rgba(89, 89, 89, 1);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 10px;
+
+  }
+
+  .dropdown-content1 {
+    display: none;
+  }
+
+  .dropdown-content2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    background-color: rgba(241, 234, 214, 1);
+    box-shadow: 8px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dbt-item {
+    color: rgba(127, 127, 127, 1);
+    padding: 15px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+  }
+
+  .dbt-item:hover {
+    color: rgba(247, 184, 1, 1);
+  }
+
+  .active {
+    color: rgba(247, 184, 1, 1);
+  }
+
+
+
+}
+
+
+/* mobile view */
+@media screen and (max-width: 500px) {
+  .intro-text {
+    margin-left: 70px;
+    margin-right: 70px;
+
+  }
 
 }

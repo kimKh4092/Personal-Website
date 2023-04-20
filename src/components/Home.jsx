@@ -11,7 +11,7 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavBar onClick={this.props.scroll} />
+                <NavBar onClick={this.props.scroll} section={this.props.section} />
                 <div className='intro'>
                     <p className='intro-text'>Hi there! I’m an electrical engineer based in Shiraz, Iran who works as a web developer.</p>
                 </div>

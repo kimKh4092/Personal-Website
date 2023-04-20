@@ -16,7 +16,7 @@ class Content extends Component {
                     <li className='content-item'>I’m interested in financial markets and has experience in markets like Stocks, Forex and Cryptocurrency.</li>
                 </ul>
 
-                <div>
+                <div className='list2'>
                     <div className='content-head'>Languages & Frameworks</div>
                     <div className='lists'>
                         <ul>
