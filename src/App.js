@@ -1,7 +1,8 @@
 import Main from './components/welcomePage';
 import './App.css';
-import { BrowserRouter, Route, Redirect, Switch, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import React, { Component } from 'react';
+import NotFound from './components/notFound';
 
 
 class APP extends Component {
@@ -11,8 +12,13 @@ class APP extends Component {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Main />} />
+          <Route path='*' element={<Navigate to='/not-found' />} />
+          <Route path='/not-found' element={<NotFound />} />
         </Routes>
+
+
       </BrowserRouter>
+
     );
   }
 }
