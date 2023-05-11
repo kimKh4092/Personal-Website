@@ -6,6 +6,10 @@ import Contact from './contact';
 
 
 function Main() {
+    // document.title = 'Kimia Khalili';
+
+
+
     const [Section, setSection] = useState('');
 
     const home = useRef(null);
@@ -13,11 +17,6 @@ function Main() {
     const contact = useRef(null);
 
     const scrollToSection = (elementRef, selected) => {
-        if (selected === 'home') {
-            window.location.reload();
-        }
-
-
 
         window.scrollTo({
             top: elementRef.current.offsetTop,
@@ -27,6 +26,10 @@ function Main() {
 
     const select = (selected) => {
         setSection(selected);
+
+        if (selected === 'refresh') {
+            window.location.reload();
+        }
 
         if (selected === 'home') {
             scrollToSection(home, selected);

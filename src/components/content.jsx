@@ -35,7 +35,9 @@ class Content extends Component {
 
 
                 <div className='content2'>
-                    <div className='content-head'>Languages & Frameworks</div>
+                    <div className='content-head'>Languages & Frameworks
+                    </div>
+
                     <div className='lists'>
                         <ul>
                             <li className='content-item2'>Python</li>
